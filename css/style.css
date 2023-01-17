@@ -10,7 +10,9 @@ body  {
 *::after {
   box-sizing: inherit;
 }
-
+img {
+  max-width: 100%;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -26,5 +28,29 @@ img {
 
 .list-reset {
   margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+
+.container  {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-offset {
+  padding-top: 160px;
+  padding-bottom: 120px;
+}
+
+/*-----section-skills------*/
+
+.skill-card__icon  {
+  display: block;
+  max-width: 64px;
+  max-height: 64px;
 }
