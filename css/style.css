@@ -4,6 +4,7 @@ html {
 }
 body  {
   font-family: 'Alexandria', sans-serif;
+  color: #1b1e20;
 }
 *,
 *::before,
@@ -64,7 +65,7 @@ p {
   font-weight: 100;
   font-size: 64px;
   line-height: 64px;
-  color: red;
+  color: #f4070f;
 }
 
 /*------header------*/
@@ -85,7 +86,7 @@ p {
 }
 
 .header-logo:focus  {
-  color: red;
+  color: #f4070f;
 }
 
 .header-logo__span  {
@@ -124,7 +125,7 @@ align-items: center;
 }
 
 .header-nav__link:focus {
-  color: red;
+  color: #f4070f;
   text-decoration: underline;
 }
 
@@ -172,7 +173,7 @@ align-items: center;
   position: relative;
   padding-top: 260px;
   padding-bottom: 200px;
-  background-image: url("../img/hero-image.jpg");
+  background-image: url("../img/hero-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -184,7 +185,7 @@ align-items: center;
 }
 
 .section-hero__title  {
-  color: red;
+  color: #f4070f;
   font-weight: 100;
   font-size: 64px;
   line-height: 64px;
@@ -195,7 +196,7 @@ align-items: center;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  color: red;
+  color: #f4070f;
 }
 
 .section-hero__text{
@@ -231,12 +232,12 @@ align-items: center;
 }
 
 .social-list__link:focus  .social-list__image {
-  border-color: blue;
+  border-color: #25264f;
 }
 /*------section-about------*/
 
 .section-about  {
-  background-color: aliceblue;
+  background-color: alice#25264f;
 }
 
 .section-about__left  {
@@ -296,7 +297,7 @@ align-items: center;
   margin-bottom: 8px;
   font-weight: 300;
   font-size: 32px;
-  color: red;
+  color: #f4070f;
 }
 
 .skill-card__icon  {
@@ -328,7 +329,7 @@ align-items: center;
 }
 
 .tabs-nav__btn_active {
-  background-color: blue;
+  background-color: #25264f;
   color: white;
 }
 
