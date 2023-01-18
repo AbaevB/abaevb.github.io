@@ -76,7 +76,35 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae enim nobis quasi numquam sit ut quibusdam accusamus voluptatum dicta voluptas molestias, ullam asperiores quidem fuga maiores obcaecati rem dolorum maxime harum deleniti libero! Voluptas officiis error eos, vero quidem iusto. Expedita, consequuntur magnam. Mollitia velit praesentium voluptatibus veniam. Distinctio libero unde blanditiis ex itaque tempore aut esse tempora, provident quasi amet mollitia in dolore! Suscipit quidem velit porro veritatis! Eos saepe eaque nihil. Alias sunt nobis minus. Laborum dignissimos cum labore numquam obcaecati repellat vitae, esse nihil sunt exercitationem ratione itaque culpa error inventore non suscipit velit ullam enim. Dolores?
           </p>
         </div>
-
+          <div class="social-block">
+            <ul aria-label="социальные сети" class="social-list list-reset flex">
+              <li class="social-list__item">
+                <a href="https://www.facebook.com/" class="social-list__link">
+                  <img class="social-list__image" src="img/facebook_icon.png" alt="Facebook logo">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <img class="social-list__image" src="img/vk_icon.png" alt="Vkontakte logo">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <img class="social-list__image" src="img/twitter_icon.png" alt="Twitter logo">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <img class="social-list__image" src="img/linkedin_icon.png" alt="Linkedin logo">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <img class="social-list__image" src="img/github_icon.png" alt="Github logo">
+                </a>
+              </li>
+            </ul>
+          </div>
       </div>
     </section>
     <section id="about" class="section section-offset section-about">
@@ -84,15 +112,29 @@
         <h2 class="section-title">
           Обо мне
         </h2>
-        <p class="section-about__text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam amet sunt placeat, hic expedita perspiciatis
-          maxime quasi dignissimos sed laboriosam aspernatur vero quae atque officia earum? Nostrum dicta fuga a saepe
-          rerum incidunt maiores, est recusandae sint sequi harum itaque veritatis vero voluptate nam? Quae quibusdam
-          molestiae laboriosam asperiores, libero facere dignissimos ad rerum quis reiciendis, officiis labore hic
-          doloremque porro aspernatur repudiandae vitae praesentium odio dolorem voluptatibus sapiente eveniet.
-          Explicabo, praesentium. Similique quia nam odio, commodi quaerat minus vero fuga! Quasi omnis ipsam corporis
-          est? Minus pariatur laboriosam ad qui, quod ipsum commodi corporis! Enim quos porro nobis a.
-        </p>
+        <div class="section-about__wrapper flex">
+          <div class="section-about__left">
+            <p>
+              <blockquote cite="https://tproger.ru/devnull/programming-quotes/">
+                Программирование — это не наука, а ремесло.
+              </blockquote>
+            </p>
+            <cite>Ричард Столлман</cite>
+            <p class="section-about__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam amet sunt placeat, hic expedita perspiciatis
+              maxime quasi dignissimos sed laboriosam aspernatur vero quae atque officia earum? Nostrum dicta fuga a saepe
+              rerum incidunt maiores, est recusandae sint sequi harum itaque veritatis vero voluptate nam?Quae quibusdam
+              molestiae laboriosam asperiores, libero facere dignissimos ad rerum quis reiciendis, officiis labore hic
+              doloremque porro aspernatur repudiandae vitae praesentium odio dolorem voluptatibus sapiente eveniet.
+              Explicabo, praesentium. Similique quia nam odio, commodi quaerat minus vero fuga! Quasi omnis ipsam corporis
+              est? Minus pariatur laboriosam ad qui, quod ipsum commodi corporis! Enim quos porro nobis a.
+            </p>
+          </div>
+          <div class="section-about__right">
+            <img src="img/user.png" alt="Андрей Баев">
+          </div>
+        </div>
+
       </div>
     </section>
     <section id="skills" class="section section-offset section-skills">
@@ -105,134 +147,245 @@
           delectus doloremque similique quos, mollitia nulla nostrum hic sint adipisci eligendi vitae ab? Architecto, ut
           eveniet!
         </p>
-        <ul class="section-skills__list list-reset flex">
-          <li class="section-skills__item">
-            <article class="skill-card">
-              <h3 class="skill-card__title">
-                Adobe Photoshop
-              </h3>
-              <icon class="skill-card__icon">
-                <img src="img/photoshop.svg" alt="Adobe Photoshop Logo">
-              </icon>
-              <label for="photoshop"> 90%</label>
-
-              <meter id="photoshop" min="0" max="100" low="33" high="66" optimum="80" value="90">
-                at 50/100
-              </meter>
-              <p class="skill-card__text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
-              </p>
-            </article>
-          </li>
-          <li class="section-skills__item">
-            <article class="skill-card">
-              <h3 class="skill-card__title">
+        <nav aria-label="меню навыков" class="skills-nav">
+          <ul class="skills-nav__list list-reset flex">
+            <li class="skills-nav__item">
+              <button class="btn-reset skills-nav__btn tabs-nav__btn tabs-nav__btn_active" data-path="one" >
+                Photoshop
+              </button>
+            </li>
+            <li class="skills-nav__item">
+              <button class="btn-reset skills-nav__btn tabs-nav__btn" data-path="two" >
                 Figma
-              </h3>
-              <icon class="skill-card__icon">
-                <img src="img/figma.svg" alt="Figma logo">
-              </icon>
-              <label for="figma"> 45%</label>
+              </button>
 
-              <meter id="figma" min="0" max="100" low="33" high="66" optimum="80" value="45">
-                at 50/100
-              </meter>
-              <p class="skill-card__text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
-              </p>
-            </article>
-          </li>
-          <li class="section-skills__item">
-            <article class="skill-card">
-              <h3 class="skill-card__title">
-                HTML
-              </h3>
-              <icon class="skill-card__icon">
-                <img src="img/html-icon.svg" alt="html-5 logo">
-              </icon>
-              <label for="html-skill"> 70%</label>
-
-              <meter id="html-skill" min="0" max="100" low="33" high="66" optimum="80" value="70">
-                at 50/100
-              </meter>
-              <p class="skill-card__text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
-              </p>
-            </article>
-          </li>
-          <li class="section-skills__item">
-            <article class="skill-card">
-              <h3 class="skill-card__title">
+            </li>
+            <li class="skills-nav__item">
+              <button class="btn-reset skills-nav__btn tabs-nav__btn" data-path="three" >
+                HTL
+              </button>
+              </li>
+            <li class="skills-nav__item">
+              <button class="btn-reset skills-nav__btn tabs-nav__btn" data-path="four" >
                 CSS
-              </h3>
-              <icon class="skill-card__icon">
-                <img src="img/css-icon.svg" alt="CSS-3 logo">
-              </icon>
-              <label for="css-skill"> 66%</label>
-
-              <meter id="css-skill" min="0" max="100" low="33" high="66" optimum="80" value="67">
-                at 50/100
-              </meter>
-              <p class="skill-card__text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
-              </p>
-            </article>
-          </li>
-          <li class="section-skills__item">
-            <article class="skill-card">
-              <h3 class="skill-card__title">
+              </button>
+              </li>
+            <li class="skills-nav__item">
+              <button class="btn-reset skills-nav__btn tabs-nav__btn" data-path="five" >
                 JavaScript
-              </h3>
-              <icon class="skill-card__icon">
-                <img src="img/java-script-icon.svg" alt="JavaScript logo">
-              </icon>
-              <label for="js-skill"> 55%</label>
-
-              <meter id="js-skill" min="0" max="100" low="33" high="66" optimum="80" value="55">
-                at 50/100
-              </meter>
-              <p class="skill-card__text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
-              </p>
-            </article>
-          </li>
-          <li class="section-skills__item">
-            <article class="skill-card">
-              <h3 class="skill-card__title">
+              </button>
+              </li>
+            <li class="skills-nav__item">
+              <button class="btn-reset skills-nav__btn tabs-nav__btn" data-path="six" >
                 PHP
-              </h3>
-              <icon class="skill-card__icon">
-                <img src="img/php-icon.svg" alt="PHP logo">
-              </icon>
-              <label for="php-skill"> 33%</label>
-
-              <meter id="php-skill" min="0" max="100" low="33" high="66" optimum="80" value="33">
-                at 50/100
-              </meter>
-              <p class="skill-card__text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
-              </p>
-            </article>
-          </li>
-          <li class="section-skills__item">
-            <article class="skill-card">
-              <h3 class="skill-card__title">
+              </button>
+              </li>
+            <li class="skills-nav__item">
+              <button class="btn-reset skills-nav__btn tabs-nav__btn" data-path="seven" >
                 GIT
-              </h3>
-              <icon class="skill-card__icon">
-                <img src="img/git-icon.svg" alt="GIT logo">
-              </icon>
-              <label for="git-skill"> 80%</label>
+              </button>
+              </li>
+          </ul>
+        </nav>
+        <div class="tabs-content">
 
-              <meter id="git-skill" min="0" max="100" low="33" high="66" optimum="80" value="80">
-                at 50/100
-              </meter>
-              <p class="skill-card__text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
-              </p>
+            <article class="skill-card tabs-item tabs-item_active flex" data-target="one" >
+              <div class="skill-card__left">
+                <header class="skill-card__header">
+                  <h3 class="skill-card__title">
+                    Adobe Photoshop
+                  </h3>
+                  <icon class="skill-card__icon">
+                    <img src="img/photoshop.svg" alt="Adobe Photoshop Logo">
+                  </icon>
+                  <label for="photoshop"> 90%</label>
+
+                  <meter id="photoshop" min="0" max="100" low="33" high="66" optimum="80" value="90">
+                    at 50/100
+                  </meter>
+                </header>
+
+                <div class="skill-card__body">
+                  <p class="skill-card__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
+                  </p>
+                </div>
+
+              </div>
+              <div class="skill-card__right">
+                <img src="img/photoshop-interface.jpg" alt="Photoshop Interface" class="skill-card__image">
+              </div>
+
+
             </article>
-          </li>
-        </ul>
+            <article class="skill-card tabs-item flex" data-target="two" >
+              <div class="skill-card__left">
+                <header class="skill-card__header">
+                  <h3 class="skill-card__title">
+                    Figma
+                  </h3>
+                  <icon class="skill-card__icon">
+                    <img src="img/figma.svg" alt="Figma logo">
+                  </icon>
+                  <label for="figma"> 45%</label>
+
+                  <meter id="figma" min="0" max="100" low="33" high="66" optimum="80" value="45">
+                    at 50/100
+                  </meter>
+                </header>
+                <div class="skill-card__body">
+                  <p class="skill-card__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
+                  </p>
+                </div>
+              </div>
+              <div class="skill-card__right">
+                <img src="img/figma.jpg" alt="Figma" class="skill-card__image">
+              </div>
+
+
+            </article>
+
+
+            <article class="skill-card tabs-item flex" data-target="three" >
+              <div class="skill-card__left">
+                <header class="skill-card__header">
+                  <h3 class="skill-card__title">
+                    HTML
+                  </h3>
+                  <icon class="skill-card__icon">
+                    <img src="img/html-icon.svg" alt="html-5 logo">
+                  </icon>
+                  <label for="html-skill"> 70%</label>
+
+                  <meter id="html-skill" min="0" max="100" low="33" high="66" optimum="80" value="70">
+                    at 50/100
+                  </meter>
+                </header>
+                <div class="skill-card__body">
+                  <p class="skill-card__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
+                  </p>
+                </div>
+              </div>
+              <div class="skill-card__right">
+                <img src="img/html_code.jpg" alt="HTML code" class="skill-card__image">
+              </div>
+
+            </article>
+
+
+            <article class="skill-card tabs-item flex" data-target="four" >
+              <div class="skill-card__left">
+                <header class="skill-card__header">
+                  <h3 class="skill-card__title">
+                    CSS
+                  </h3>
+                  <icon class="skill-card__icon">
+                    <img src="img/css-icon.svg" alt="CSS-3 logo">
+                  </icon>
+                  <label for="css-skill"> 66%</label>
+
+                  <meter id="css-skill" min="0" max="100" low="33" high="66" optimum="80" value="67">
+                    at 50/100
+                  </meter>
+                </header>
+                <div class="skill-card__body">
+                  <p class="skill-card__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
+                  </p>
+                </div>
+              </div>
+              <div class="skill-card__right">
+                <img src="img/css-code.jpg" alt="CSS code" class="skill-card__image">
+              </div>
+
+            </article>
+
+
+            <article class="skill-card tabs-item flex" data-target="five" >
+              <div class="skill-card__left">
+                <header class="skliil-card__header">
+                  <h3 class="skill-card__title">
+                    JavaScript
+                  </h3>
+                  <icon class="skill-card__icon">
+                    <img src="img/java-script-icon.svg" alt="JavaScript logo">
+                  </icon>
+                  <label for="js-skill"> 55%</label>
+
+                  <meter id="js-skill" min="0" max="100" low="33" high="66" optimum="80" value="55">
+                    at 50/100
+                  </meter>
+                </header>
+                <div class="skill-card__body">
+                  <p class="skill-card__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
+                  </p>
+                </div>
+              </div>
+              <div class="skill-card__right">
+                <img src="img/js-code.jpg" alt="javascript code" class="skill-card__image">
+              </div>
+
+            </article>
+
+
+            <article class="skill-card tabs-item flex" data-target="six" >
+              <div class="skill-card__left">
+                <header class="skill-card__header">
+                  <h3 class="skill-card__title">
+                    PHP
+                  </h3>
+                  <icon class="skill-card__icon">
+                    <img src="img/php-icon.svg" alt="PHP logo">
+                  </icon>
+                  <label for="php-skill"> 33%</label>
+
+                  <meter id="php-skill" min="0" max="100" low="33" high="66" optimum="80" value="33">
+                    at 50/100
+                  </meter>
+                </header>
+                <div class="skill-card__body">
+                  <p class="skill-card__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
+                  </p>
+                </div>
+              </div>
+              <div class="skill-card__right">
+                <img src="img/php-mascot.jpg" alt="PHP mascot" class="skill-card__image">
+              </div>
+
+            </article>
+
+
+            <article class="skill-card tabs-item flex" data-target="seven" >
+              <div class="skill-card__left">
+                <header class="skill-card__header">
+                  <h3 class="skill-card__title">
+                    GIT
+                  </h3>
+                  <icon class="skill-card__icon">
+                    <img src="img/git-icon.svg" alt="GIT logo">
+                  </icon>
+                  <label for="git-skill"> 80%</label>
+
+                  <meter id="git-skill" min="0" max="100" low="33" high="66" optimum="80" value="80">
+                    at 50/100
+                  </meter>
+                </header>
+                <div class="skill-card__body">
+                  <p class="skill-card__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
+                  </p>
+                </div>
+              </div>
+              <div class="skill-card__right">
+                <img src="img/github-mascot.jpg" alt="Github mascot" class="skill-card__image">
+              </div>
+            </article>
+
+        </div>
       </div>
     </section>
     <section id="portfolio" class="section section-offset">
@@ -368,33 +521,7 @@
           </nav>
         </div><!--/footer-left-->
         <div class="footer-right">
-          <ul aria-label="социальные сети" class="social-list list-reset">
-            <li class="social-list__item">
-              <a href="#" class="social-list__link">
 
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="#" class="social-list__link">
-                ВКонтакте
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="#" class="social-list__link">
-                Twitter
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="#" class="social-list__link">
-                Linkedin
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="#" class="social-list__link">
-                Github
-              </a>
-            </li>
-          </ul>
           <small class="footer__copy">
             &copy; Andrew Baev 2023, all right reserved.
           </small>
