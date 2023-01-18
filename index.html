@@ -12,12 +12,18 @@
 
 <body>
   <header class="header">
+
     <div class="container">
       <div class="header-wrap flex">
         <div class="header-left">
-          <a tabindex="1" href="#" class="header__logo">Андрей Баев</a>
+          <a tabindex="1" href="#" class="header-logo">
+            Андрей Баев
+            <span class="header-logo__span">
+              веб-разработчик
+            </span>
+          </a>
         </div>
-        <div class="header-right">
+        <div class="header-right flex">
           <nav aria-label="главное меню" class="header-nav">
             <ul class="header-nav__list list-reset flex">
               <li class="header-nav__item">
@@ -47,6 +53,11 @@
               </li>
             </ul>
           </nav>
+          <button class="btn-reset burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
         </div>
       </div>
     </div><!--/container-->
@@ -54,12 +65,18 @@
   <main class="main">
     <section id="hero" class="section section-offset section-hero">
       <div class="container">
-        <h1 class="section-hero__title">
-          Андрей Баев
-        </h1>
-        <p class="section-hero__descr">
-          Веб-разработчик.
-        </p>
+        <div class="section-hero__content flex">
+          <h1 class="section-hero__title">
+            Андрей Баев
+          </h1>
+          <p class="section-hero__descr">
+            Веб-разработчик.
+          </p>
+          <p class="section-hero__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae enim nobis quasi numquam sit ut quibusdam accusamus voluptatum dicta voluptas molestias, ullam asperiores quidem fuga maiores obcaecati rem dolorum maxime harum deleniti libero! Voluptas officiis error eos, vero quidem iusto. Expedita, consequuntur magnam. Mollitia velit praesentium voluptatibus veniam. Distinctio libero unde blanditiis ex itaque tempore aut esse tempora, provident quasi amet mollitia in dolore! Suscipit quidem velit porro veritatis! Eos saepe eaque nihil. Alias sunt nobis minus. Laborum dignissimos cum labore numquam obcaecati repellat vitae, esse nihil sunt exercitationem ratione itaque culpa error inventore non suscipit velit ullam enim. Dolores?
+          </p>
+        </div>
+
       </div>
     </section>
     <section id="about" class="section section-offset section-about">
