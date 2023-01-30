@@ -1,16 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap');
-html {
-  box-sizing: border-box;
-}
+
 body  {
   font-family: 'Alexandria', sans-serif;
   color: #1b1e20;
 }
 *,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+
 img {
   max-width: 100%;
 }
@@ -222,6 +217,10 @@ align-items: center;
   margin-right: 30px;
 }
 
+.social-list__item  {
+  flex-shrink: 0;
+}
+
 .social-list__image {
   flex-shrink: 0;
   width: 64px;
@@ -240,12 +239,8 @@ align-items: center;
   background-color: alice#25264f;
 }
 
-.section-about__left  {
-  width: 75%;
-}
- .section-about__right {
-  width: 25%;
-}
+
+
 
 .section-about__text  {
   font-weight: 300;
@@ -270,9 +265,9 @@ align-items: center;
 }
 
 .tabs-nav__btn  {
-  padding: 2px 8px;
+  padding: 2px ;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 
@@ -285,9 +280,7 @@ align-items: center;
   align-items: center;
 }
 
-.skill-card__left, .skill-card__right {
-  width: 49%;
-}
+
 
 .skill-card__header {
   margin-bottom: 16px;

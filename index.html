@@ -6,60 +6,69 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Андрей Баев</title>
-  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
   <header class="header">
-
     <div class="container">
-      <div class="header-wrap flex">
-        <div class="header-left">
-          <a tabindex="1" href="#" class="header-logo">
-            Андрей Баев
-            <span class="header-logo__span">
-              веб-разработчик
-            </span>
+      <nav class="navbar navbar-dark navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <div tabindex="1" href="#" class="header-logo">
+              Андрей Баев
+              <span class="header-logo__span">
+                веб-разработчик
+              </span>
+            </div>
+
           </a>
-        </div>
-        <div class="header-right flex">
-          <nav aria-label="главное меню" class="header-nav">
-            <ul class="header-nav__list list-reset flex">
-              <li class="header-nav__item">
-                <a href="#hero" class="header-nav__link">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active header-nav__link" aria-current="page" href="#hero">
+
                   Главная
                 </a>
               </li>
-              <li class="header-nav__item">
-                <a href="#about" class="header-nav__link">
-                  Обо мне
-                </a>
+              <li class="nav-item">
+                <a class="nav-link header-nav__link" href="#about">Обо мне</a>
               </li>
-              <li class="header-nav__item">
-                <a href="#skills" class="header-nav__link">
-                  Мои навыки
-                </a>
+              <li class="nav-item">
+                <a class="nav-link header-nav__link" href="#skills">Навыки</a>
               </li>
-              <li class="header-nav__item">
-                <a href="#portfolio" class="header-nav__link">
-                  Портфолио
-                </a>
+              <li class="nav-item">
+                <a class="nav-link header-nav__link" href="#portfolio">Портфолио</a>
               </li>
-              <li class="header-nav__item">
-                <a href="#contacts" class="header-nav__link">
-                  Контакты
-                </a>
+              <li class="nav-item">
+                <a class="nav-link header-nav__link" href="#contacts">Контакты</a>
               </li>
+              <!--<li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>-->
+
             </ul>
-          </nav>
-          <button class="btn-reset burger">
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
-          </button>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-      </div>
+      </nav>
     </div><!--/container-->
   </header>
   <main class="main">
@@ -73,38 +82,44 @@
             Веб-разработчик.
           </p>
           <p class="section-hero__text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae enim nobis quasi numquam sit ut quibusdam accusamus voluptatum dicta voluptas molestias, ullam asperiores quidem fuga maiores obcaecati rem dolorum maxime harum deleniti libero! Voluptas officiis error eos, vero quidem iusto. Expedita, consequuntur magnam. Mollitia velit praesentium voluptatibus veniam. Distinctio libero unde blanditiis ex itaque tempore aut esse tempora, provident quasi amet mollitia in dolore! Suscipit quidem velit porro veritatis! Eos saepe eaque nihil. Alias sunt nobis minus. Laborum dignissimos cum labore numquam obcaecati repellat vitae, esse nihil sunt exercitationem ratione itaque culpa error inventore non suscipit velit ullam enim. Dolores?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae enim nobis quasi numquam sit ut
+            quibusdam accusamus voluptatum dicta voluptas molestias, ullam asperiores quidem fuga maiores obcaecati rem
+            dolorum maxime harum deleniti libero! Voluptas officiis error eos, vero quidem iusto. Expedita, consequuntur
+            magnam. Mollitia velit praesentium voluptatibus veniam. Distinctio libero unde blanditiis ex itaque tempore
+            aut esse tempora, provident quasi amet mollitia in dolore! Suscipit quidem velit porro veritatis! Eos saepe
+            eaque nihil. Alias sunt nobis minus. Laborum dignissimos cum labore numquam obcaecati repellat vitae, esse
+            nihil sunt exercitationem ratione itaque culpa error inventore non suscipit velit ullam enim. Dolores?
           </p>
         </div>
-          <div class="social-block">
-            <ul aria-label="социальные сети" class="social-list list-reset flex">
-              <li class="social-list__item">
-                <a href="https://www.facebook.com/" class="social-list__link">
-                  <img class="social-list__image" src="img/facebook_icon.png" alt="Facebook logo">
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a href="#" class="social-list__link">
-                  <img class="social-list__image" src="img/vk_icon.png" alt="Vkontakte logo">
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a href="#" class="social-list__link">
-                  <img class="social-list__image" src="img/twitter_icon.png" alt="Twitter logo">
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a href="#" class="social-list__link">
-                  <img class="social-list__image" src="img/linkedin_icon.png" alt="Linkedin logo">
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a href="#" class="social-list__link">
-                  <img class="social-list__image" src="img/github_icon.png" alt="Github logo">
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="social-block">
+          <ul aria-label="социальные сети" class="social-list list-reset flex">
+            <li class="social-list__item">
+              <a href="https://www.facebook.com/" class="social-list__link">
+                <img class="social-list__image" src="img/facebook_icon.png" alt="Facebook logo">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-list__link">
+                <img class="social-list__image" src="img/vk_icon.png" alt="Vkontakte logo">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-list__link">
+                <img class="social-list__image" src="img/twitter_icon.png" alt="Twitter logo">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-list__link">
+                <img class="social-list__image" src="img/linkedin_icon.png" alt="Linkedin logo">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-list__link">
+                <img class="social-list__image" src="img/github_icon.png" alt="Github logo">
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section id="about" class="section section-offset section-about">
@@ -112,289 +127,387 @@
         <h2 class="section-title">
           Обо мне
         </h2>
-        <div class="section-about__wrapper flex">
-          <div class="section-about__left">
-            <p>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="section-about__left">
+              <p>
               <blockquote cite="https://tproger.ru/devnull/programming-quotes/">
                 Программирование — это не наука, а ремесло.
               </blockquote>
-            </p>
-            <cite>Ричард Столлман</cite>
-            <p class="section-about__text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam amet sunt placeat, hic expedita perspiciatis
-              maxime quasi dignissimos sed laboriosam aspernatur vero quae atque officia earum? Nostrum dicta fuga a saepe
-              rerum incidunt maiores, est recusandae sint sequi harum itaque veritatis vero voluptate nam?Quae quibusdam
-              molestiae laboriosam asperiores, libero facere dignissimos ad rerum quis reiciendis, officiis labore hic
-              doloremque porro aspernatur repudiandae vitae praesentium odio dolorem voluptatibus sapiente eveniet.
-              Explicabo, praesentium. Similique quia nam odio, commodi quaerat minus vero fuga! Quasi omnis ipsam corporis
-              est? Minus pariatur laboriosam ad qui, quod ipsum commodi corporis! Enim quos porro nobis a.
-            </p>
-          </div>
-          <div class="section-about__right">
-            <img src="img/user.png" alt="Андрей Баев">
-          </div>
-        </div>
+              </p>
 
-      </div>
+              <cite>Ричард Столлман</cite>
+              <p class="section-about__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam amet sunt placeat, hic expedita
+                perspiciatis
+                maxime quasi dignissimos sed laboriosam aspernatur vero quae atque officia earum? Nostrum dicta fuga a
+                saepe
+                rerum incidunt maiores, est recusandae sint sequi harum itaque veritatis vero voluptate nam?Quae
+                quibusdam
+                molestiae laboriosam asperiores, libero facere dignissimos ad rerum quis reiciendis, officiis labore hic
+                doloremque porro aspernatur repudiandae vitae praesentium odio dolorem voluptatibus sapiente eveniet.
+                Explicabo, praesentium. Similique quia nam odio, commodi quaerat minus vero fuga! Quasi omnis ipsam
+                corporis
+                est? Minus pariatur laboriosam ad qui, quod ipsum commodi corporis! Enim quos porro nobis a.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="section-about__right">
+              <img src="img/user.png" alt="Андрей Баев">
+            </div>
+          </div>
+        </div><!--/row-->
+      </div><!--/container-->
     </section>
     <section id="skills" class="section section-offset section-skills">
       <div class="container">
-        <h2 class="section-title">
-          Мои навыки
-        </h2>
-        <p class="section-skills__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa reiciendis, quo veritatis totam corporis
-          delectus doloremque similique quos, mollitia nulla nostrum hic sint adipisci eligendi vitae ab? Architecto, ut
-          eveniet!
-        </p>
-        <nav aria-label="меню навыков" class="skills-nav">
-          <ul class="skills-nav__list list-reset flex">
-            <li class="skills-nav__item">
-              <button class="btn-reset skills-nav__btn tabs-nav__btn tabs-nav__btn_active" data-path="one" >
-                Photoshop
-              </button>
-            </li>
-            <li class="skills-nav__item">
-              <button class="btn-reset skills-nav__btn tabs-nav__btn" data-path="two" >
-                Figma
-              </button>
+        <div class="row">
+          <h2 class="section-title">
+            Мои навыки
+          </h2>
+          <p class="section-skills__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ab eius doloremque nam accusamus ipsum
+            explicabo numquam laudantium tempore libero facilis fugiat ullam rem non, est quia temporibus quae sapiente?
+          </p>
 
-            </li>
-            <li class="skills-nav__item">
-              <button class="btn-reset skills-nav__btn tabs-nav__btn" data-path="three" >
-                HTL
-              </button>
+          <div class="col-12">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="photoshop-tab" data-bs-toggle="tab"
+                  data-bs-target="#photoshop-tab-pane" type="button" role="tab" aria-controls="photoshop-tab-pane"
+                  aria-selected="true">Photoshop</button>
               </li>
-            <li class="skills-nav__item">
-              <button class="btn-reset skills-nav__btn tabs-nav__btn" data-path="four" >
-                CSS
-              </button>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="figma-tab" data-bs-toggle="tab" data-bs-target="#figma-tab-pane"
+                  type="button" role="tab" aria-controls="figma-tab-pane" aria-selected="false">Figma</button>
               </li>
-            <li class="skills-nav__item">
-              <button class="btn-reset skills-nav__btn tabs-nav__btn" data-path="five" >
-                JavaScript
-              </button>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="html-tab" data-bs-toggle="tab" data-bs-target="#html-tab-pane"
+                  type="button" role="tab" aria-controls="html-tab-pane" aria-selected="false">HTML</button>
               </li>
-            <li class="skills-nav__item">
-              <button class="btn-reset skills-nav__btn tabs-nav__btn" data-path="six" >
-                PHP
-              </button>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="css-tab" data-bs-toggle="tab" data-bs-target="#css-tab-pane" type="button"
+                  role="tab" aria-controls="css-tab-pane" aria-selected="false">CSS</button>
               </li>
-            <li class="skills-nav__item">
-              <button class="btn-reset skills-nav__btn tabs-nav__btn" data-path="seven" >
-                GIT
-              </button>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="js-tab" data-bs-toggle="tab" data-bs-target="#js-tab-pane" type="button"
+                  role="tab" aria-controls="js-tab-pane" aria-selected="false">JavaScript</button>
               </li>
-          </ul>
-        </nav>
-        <div class="tabs-content">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="php-tab" data-bs-toggle="tab" data-bs-target="#php-tab-pane" type="button"
+                  role="tab" aria-controls="php-tab-pane" aria-selected="false">PHP</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="git-tab" data-bs-toggle="tab" data-bs-target="#git-tab-pane" type="button"
+                  role="tab" aria-controls="git-tab-pane" aria-selected="false">Git</button>
+              </li>
 
-            <article class="skill-card tabs-item tabs-item_active flex" data-target="one" >
-              <div class="skill-card__left">
-                <header class="skill-card__header">
-                  <h3 class="skill-card__title">
-                    Adobe Photoshop
-                  </h3>
-                  <icon class="skill-card__icon">
-                    <img src="img/photoshop.svg" alt="Adobe Photoshop Logo">
-                  </icon>
-                  <label for="photoshop"> 90%</label>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="photoshop-tab-pane" role="tabpanel"
+                aria-labelledby="photoshop-tab" tabindex="0">
+                <article class="skill-card">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6 flex">
+                        <div class="skill-card__content">
+                          <header class="skill-card__header">
+                            <h3 class="skill-card__title">
+                              Adobe Photoshop
+                            </h3>
+                            <icon class="skill-card__icon">
+                              <img src="img/photoshop.svg" alt="Adobe Photoshop Logo">
+                            </icon>
+                            <label for="photoshop"> 90%</label>
 
-                  <meter id="photoshop" min="0" max="100" low="33" high="66" optimum="80" value="90">
-                    at 50/100
-                  </meter>
-                </header>
+                            <meter id="photoshop" min="0" max="100" low="33" high="66" optimum="80" value="90">
+                              at 50/100
+                            </meter>
+                          </header>
 
-                <div class="skill-card__body">
-                  <p class="skill-card__text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
-                  </p>
-                </div>
+                          <div class="skill-card__body">
+                            <p class="skill-card__text">
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit
+                              totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus,
+                              accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis
+                              pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse
+                              non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem
+                              voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a,
+                              possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio
+                              iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut
+                              dolores quis sunt sequi voluptas!
+                            </p>
+                          </div>
 
+                        </div>
+                      </div>
+                      <div class="col-sm-6 flex">
+                        <img src="img/photoshop-interface.jpg" alt="Интерфейс Фотошопа" class="skill-card__image">
+                      </div>
+                    </div>
+                  </div>
+                </article>
               </div>
-              <div class="skill-card__right">
-                <img src="img/photoshop-interface.jpg" alt="Photoshop Interface" class="skill-card__image">
+              <div class="tab-pane fade" id="figma-tab-pane" role="tabpanel" aria-labelledby="figma-tab" tabindex="0">
+                <article class="skill-card">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6 flex">
+                        <div class="skill-card__content">
+                          <header class="skill-card__header">
+                            <h3 class="skill-card__title">
+                              Figma
+                            </h3>
+                            <icon class="skill-card__icon">
+                              <img src="img/figma.svg" alt="Figma logo">
+                            </icon>
+                            <label for="figma"> 45%</label>
+
+                            <meter id="figma" min="0" max="100" low="33" high="66" optimum="80" value="45">
+                              at 50/100
+                            </meter>
+                          </header>
+                          <div class="skill-card__body">
+                            <p class="skill-card__text">
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit
+                              totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus,
+                              accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis
+                              pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse
+                              non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem
+                              voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a,
+                              possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio
+                              iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut
+                              dolores quis sunt sequi voluptas!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 flex">
+                        <img src="img/figma.jpg" alt="Логотип Figma" class="skill-card__image">
+                      </div>
+                    </div>
+                  </div>
+                </article>
               </div>
+              <div class="tab-pane fade" id="html-tab-pane" role="tabpanel" aria-labelledby="html-tab" tabindex="0">
+                <article class="skill-card">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6 flex">
+                        <div class="skill-card__content">
+                          <header class="skill-card__header">
+                            <h3 class="skill-card__title">
+                              HTML
+                            </h3>
+                            <icon class="skill-card__icon">
+                              <img src="img/html-icon.svg" alt="html-5 logo">
+                            </icon>
+                            <label for="html-skill"> 70%</label>
 
-
-            </article>
-            <article class="skill-card tabs-item flex" data-target="two" >
-              <div class="skill-card__left">
-                <header class="skill-card__header">
-                  <h3 class="skill-card__title">
-                    Figma
-                  </h3>
-                  <icon class="skill-card__icon">
-                    <img src="img/figma.svg" alt="Figma logo">
-                  </icon>
-                  <label for="figma"> 45%</label>
-
-                  <meter id="figma" min="0" max="100" low="33" high="66" optimum="80" value="45">
-                    at 50/100
-                  </meter>
-                </header>
-                <div class="skill-card__body">
-                  <p class="skill-card__text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
-                  </p>
-                </div>
+                            <meter id="html-skill" min="0" max="100" low="33" high="66" optimum="80" value="70">
+                              at 50/100
+                            </meter>
+                          </header>
+                          <div class="skill-card__body">
+                            <p class="skill-card__text">
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit
+                              totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus,
+                              accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis
+                              pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse
+                              non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem
+                              voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a,
+                              possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio
+                              iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut
+                              dolores quis sunt sequi voluptas!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 flex">
+                        <img src="img/html_code.jpg" alt="Код HTML" class="skill-card__image">
+                      </div>
+                    </div>
+                  </div>
+                </article>
               </div>
-              <div class="skill-card__right">
-                <img src="img/figma.jpg" alt="Figma" class="skill-card__image">
+              <div class="tab-pane fade" id="css-tab-pane" role="tabpanel" aria-labelledby="css-tab" tabindex="0">
+                <article class="skill-card">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6 flex">
+                        <div class="skill-card__content">
+                          <header class="skill-card__header">
+                            <h3 class="skill-card__title">
+                              CSS
+                            </h3>
+                            <icon class="skill-card__icon">
+                              <img src="img/css-icon.svg" alt="CSS-3 logo">
+                            </icon>
+                            <label for="css-skill"> 66%</label>
+
+                            <meter id="css-skill" min="0" max="100" low="33" high="66" optimum="80" value="67">
+                              at 50/100
+                            </meter>
+                          </header>
+                          <div class="skill-card__body">
+                            <p class="skill-card__text">
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit
+                              totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus,
+                              accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis
+                              pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse
+                              non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem
+                              voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a,
+                              possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio
+                              iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut
+                              dolores quis sunt sequi voluptas!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 flex">
+                        <img src="img/css-code.jpg" alt="Код CSS" class="skill-card__image">
+                      </div>
+                    </div>
+                  </div>
+                </article>
               </div>
+              <div class="tab-pane fade" id="js-tab-pane" role="tabpanel" aria-labelledby="js-tab" tabindex="0">
+                <article class="skill-card">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6 flex">
+                        <div class="skill-card__content">
+                          <header class="skliil-card__header">
+                            <h3 class="skill-card__title">
+                              JavaScript
+                            </h3>
+                            <icon class="skill-card__icon">
+                              <img src="img/java-script-icon.svg" alt="JavaScript logo">
+                            </icon>
+                            <label for="js-skill"> 55%</label>
 
-
-            </article>
-
-
-            <article class="skill-card tabs-item flex" data-target="three" >
-              <div class="skill-card__left">
-                <header class="skill-card__header">
-                  <h3 class="skill-card__title">
-                    HTML
-                  </h3>
-                  <icon class="skill-card__icon">
-                    <img src="img/html-icon.svg" alt="html-5 logo">
-                  </icon>
-                  <label for="html-skill"> 70%</label>
-
-                  <meter id="html-skill" min="0" max="100" low="33" high="66" optimum="80" value="70">
-                    at 50/100
-                  </meter>
-                </header>
-                <div class="skill-card__body">
-                  <p class="skill-card__text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
-                  </p>
-                </div>
+                            <meter id="js-skill" min="0" max="100" low="33" high="66" optimum="80" value="55">
+                              at 50/100
+                            </meter>
+                          </header>
+                          <div class="skill-card__body">
+                            <p class="skill-card__text">
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit
+                              totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus,
+                              accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis
+                              pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse
+                              non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem
+                              voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a,
+                              possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio
+                              iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut
+                              dolores quis sunt sequi voluptas!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 flex">
+                        <img src="img/js-code.jpg" alt="Код JavaScript" class="skill-card__image">
+                      </div>
+                    </div>
+                  </div>
+                </article>
               </div>
-              <div class="skill-card__right">
-                <img src="img/html_code.jpg" alt="HTML code" class="skill-card__image">
+              <div class="tab-pane fade" id="php-tab-pane" role="tabpanel" aria-labelledby="php-tab" tabindex="0">
+                <article class="skill-card">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6 flex">
+                        <div class="skill-card__content">
+                          <header class="skill-card__header">
+                            <h3 class="skill-card__title">
+                              PHP
+                            </h3>
+                            <icon class="skill-card__icon">
+                              <img src="img/php-icon.svg" alt="PHP logo">
+                            </icon>
+                            <label for="php-skill"> 33%</label>
+
+                            <meter id="php-skill" min="0" max="100" low="33" high="66" optimum="80" value="33">
+                              at 50/100
+                            </meter>
+                          </header>
+                          <div class="skill-card__body">
+                            <p class="skill-card__text">
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit
+                              totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus,
+                              accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis
+                              pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse
+                              non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem
+                              voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a,
+                              possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio
+                              iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut
+                              dolores quis sunt sequi voluptas!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 flex">
+                        <img src="img/php-mascot.jpg" alt="Плюшевый слоник с логотипом PHP" class="skill-card__image">
+                      </div>
+                    </div>
+                  </div>
+                </article>
               </div>
+              <div class="tab-pane fade" id="git-tab-pane" role="tabpanel" aria-labelledby="git-tab" tabindex="0">
+                <article class="skill-card">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6 flex">
+                        <div class="skill-card__content">
+                          <header class="skill-card__header">
+                            <h3 class="skill-card__title">
+                              GIT
+                            </h3>
+                            <icon class="skill-card__icon">
+                              <img src="img/git-icon.svg" alt="GIT logo">
+                            </icon>
+                            <label for="git-skill"> 80%</label>
 
-            </article>
-
-
-            <article class="skill-card tabs-item flex" data-target="four" >
-              <div class="skill-card__left">
-                <header class="skill-card__header">
-                  <h3 class="skill-card__title">
-                    CSS
-                  </h3>
-                  <icon class="skill-card__icon">
-                    <img src="img/css-icon.svg" alt="CSS-3 logo">
-                  </icon>
-                  <label for="css-skill"> 66%</label>
-
-                  <meter id="css-skill" min="0" max="100" low="33" high="66" optimum="80" value="67">
-                    at 50/100
-                  </meter>
-                </header>
-                <div class="skill-card__body">
-                  <p class="skill-card__text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
-                  </p>
-                </div>
+                            <meter id="git-skill" min="0" max="100" low="33" high="66" optimum="80" value="80">
+                              at 50/100
+                            </meter>
+                          </header>
+                          <div class="skill-card__body">
+                            <p class="skill-card__text">
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit
+                              totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus,
+                              accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis
+                              pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse
+                              non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem
+                              voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a,
+                              possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio
+                              iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut
+                              dolores quis sunt sequi voluptas!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 flex">
+                        <img src="img/github-mascot.jpg" alt="Игрушка-маскот Гитхаба" class="skill-card__image">
+                      </div>
+                    </div>
+                  </div>
+                </article>
               </div>
-              <div class="skill-card__right">
-                <img src="img/css-code.jpg" alt="CSS code" class="skill-card__image">
-              </div>
+            </div>
+          </div>
 
-            </article>
-
-
-            <article class="skill-card tabs-item flex" data-target="five" >
-              <div class="skill-card__left">
-                <header class="skliil-card__header">
-                  <h3 class="skill-card__title">
-                    JavaScript
-                  </h3>
-                  <icon class="skill-card__icon">
-                    <img src="img/java-script-icon.svg" alt="JavaScript logo">
-                  </icon>
-                  <label for="js-skill"> 55%</label>
-
-                  <meter id="js-skill" min="0" max="100" low="33" high="66" optimum="80" value="55">
-                    at 50/100
-                  </meter>
-                </header>
-                <div class="skill-card__body">
-                  <p class="skill-card__text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
-                  </p>
-                </div>
-              </div>
-              <div class="skill-card__right">
-                <img src="img/js-code.jpg" alt="javascript code" class="skill-card__image">
-              </div>
-
-            </article>
-
-
-            <article class="skill-card tabs-item flex" data-target="six" >
-              <div class="skill-card__left">
-                <header class="skill-card__header">
-                  <h3 class="skill-card__title">
-                    PHP
-                  </h3>
-                  <icon class="skill-card__icon">
-                    <img src="img/php-icon.svg" alt="PHP logo">
-                  </icon>
-                  <label for="php-skill"> 33%</label>
-
-                  <meter id="php-skill" min="0" max="100" low="33" high="66" optimum="80" value="33">
-                    at 50/100
-                  </meter>
-                </header>
-                <div class="skill-card__body">
-                  <p class="skill-card__text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
-                  </p>
-                </div>
-              </div>
-              <div class="skill-card__right">
-                <img src="img/php-mascot.jpg" alt="PHP mascot" class="skill-card__image">
-              </div>
-
-            </article>
-
-
-            <article class="skill-card tabs-item flex" data-target="seven" >
-              <div class="skill-card__left">
-                <header class="skill-card__header">
-                  <h3 class="skill-card__title">
-                    GIT
-                  </h3>
-                  <icon class="skill-card__icon">
-                    <img src="img/git-icon.svg" alt="GIT logo">
-                  </icon>
-                  <label for="git-skill"> 80%</label>
-
-                  <meter id="git-skill" min="0" max="100" low="33" high="66" optimum="80" value="80">
-                    at 50/100
-                  </meter>
-                </header>
-                <div class="skill-card__body">
-                  <p class="skill-card__text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi explicabo suscipit totam molestias, ratione officiis libero tenetur magni dolorum voluptatem necessitatibus, accusamus ullam placeat odio rem eveniet dolore quod amet nihil iure cumque, reiciendis pariatur? Quam tenetur repellat eum incidunt dolor, ea, quibusdam officiis corrupti esse non possimus optio maiores accusamus est explicabo quaerat vero aperiam? Quia voluptatem voluptas temporibus non quae ducimus repellendus culpa adipisci eligendi illum ut nulla a, possimus odio nam iste similique eveniet pariatur, vel blanditiis omnis iure. Distinctio iste quidem, dolorum non dicta ullam, dignissimos assumenda porro, aperiam obcaecati aut dolores quis sunt sequi voluptas!
-                  </p>
-                </div>
-              </div>
-              <div class="skill-card__right">
-                <img src="img/github-mascot.jpg" alt="Github mascot" class="skill-card__image">
-              </div>
-            </article>
-
-        </div>
-      </div>
+        </div><!--/row-->
+      </div><!--/container-->
     </section>
     <section id="portfolio" class="section section-offset">
       <div class="container">
         <h2 class="section-title">
           Портфолио
         </h2>
-        <ul class="section-portfolio__list list-reset flex">
-          <li class="section-portfolio__item">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
             <a href="#" class="portfolio-link">
               <article class="portfolio-card">
                 <h3 class="potfolio-card__title">
@@ -402,12 +515,23 @@
                 </h3>
                 <img src="" alt="Project1 preview" class="portfolio-card__image">
                 <p class="portfolio-card__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ut. Porro laboriosam consectetur possimus mollitia atque sint veritatis incidunt? Eaque sint ipsam, nihil veritatis reprehenderit molestias, cum maxime a error veniam voluptates! Temporibus assumenda unde tempore itaque dolore obcaecati mollitia dolorum corporis tempora voluptatibus reprehenderit perspiciatis, officia dolores facilis qui. Minima a quo placeat at numquam quaerat odit enim nemo ea maxime maiores beatae, dolore reiciendis quam quidem fugit suscipit quas odio voluptatibus architecto tenetur expedita aliquid quos quisquam? Voluptatem, commodi reprehenderit deserunt quis repellat et aliquam sequi facere nemo suscipit maxime iure cupiditate molestiae tempora, totam, laudantium doloremque pariatur quam eius unde iste illo. Natus dignissimos ea vitae numquam maiores ipsum, tempora nesciunt beatae aliquid quaerat dolore eveniet cum aliquam atque ex debitis quod doloremque dolor accusamus ad eius! Repudiandae deleniti nobis dolorum laborum excepturi. Sunt iure, nemo labore ratione officia sit cumque, doloribus, ipsa error aliquam possimus repudiandae.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ut. Porro laboriosam consectetur
+                  possimus mollitia atque sint veritatis incidunt? Eaque sint ipsam, nihil veritatis reprehenderit
+                  molestias, cum maxime a error veniam voluptates! Temporibus assumenda unde tempore itaque dolore
+                  obcaecati mollitia dolorum corporis tempora voluptatibus reprehenderit perspiciatis, officia dolores
+                  facilis qui. Minima a quo placeat at numquam quaerat odit enim nemo ea maxime maiores beatae, dolore
+                  reiciendis quam quidem fugit suscipit quas odio voluptatibus architecto tenetur expedita aliquid quos
+                  quisquam? Voluptatem, commodi reprehenderit deserunt quis repellat et aliquam sequi facere nemo
+                  suscipit maxime iure cupiditate molestiae tempora, totam, laudantium doloremque pariatur quam eius
+                  unde iste illo. Natus dignissimos ea vitae numquam maiores ipsum, tempora nesciunt beatae aliquid
+                  quaerat dolore eveniet cum aliquam atque ex debitis quod doloremque dolor accusamus ad eius!
+                  Repudiandae deleniti nobis dolorum laborum excepturi. Sunt iure, nemo labore ratione officia sit
+                  cumque, doloribus, ipsa error aliquam possimus repudiandae.
                 </p>
               </article>
             </a>
-          </li>
-          <li class="section-portfolio__item">
+          </div><!--/col-->
+          <div class="col-lg-3 col-md-6 col-sm-12">
             <a href="#" class="portfolio-link">
               <article class="portfolio-card">
                 <h3 class="potfolio-card__title">
@@ -415,12 +539,23 @@
                 </h3>
                 <img src="" alt="Project1 preview" class="portfolio-card__image">
                 <p class="portfolio-card__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ut. Porro laboriosam consectetur possimus mollitia atque sint veritatis incidunt? Eaque sint ipsam, nihil veritatis reprehenderit molestias, cum maxime a error veniam voluptates! Temporibus assumenda unde tempore itaque dolore obcaecati mollitia dolorum corporis tempora voluptatibus reprehenderit perspiciatis, officia dolores facilis qui. Minima a quo placeat at numquam quaerat odit enim nemo ea maxime maiores beatae, dolore reiciendis quam quidem fugit suscipit quas odio voluptatibus architecto tenetur expedita aliquid quos quisquam? Voluptatem, commodi reprehenderit deserunt quis repellat et aliquam sequi facere nemo suscipit maxime iure cupiditate molestiae tempora, totam, laudantium doloremque pariatur quam eius unde iste illo. Natus dignissimos ea vitae numquam maiores ipsum, tempora nesciunt beatae aliquid quaerat dolore eveniet cum aliquam atque ex debitis quod doloremque dolor accusamus ad eius! Repudiandae deleniti nobis dolorum laborum excepturi. Sunt iure, nemo labore ratione officia sit cumque, doloribus, ipsa error aliquam possimus repudiandae.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ut. Porro laboriosam consectetur
+                  possimus mollitia atque sint veritatis incidunt? Eaque sint ipsam, nihil veritatis reprehenderit
+                  molestias, cum maxime a error veniam voluptates! Temporibus assumenda unde tempore itaque dolore
+                  obcaecati mollitia dolorum corporis tempora voluptatibus reprehenderit perspiciatis, officia dolores
+                  facilis qui. Minima a quo placeat at numquam quaerat odit enim nemo ea maxime maiores beatae, dolore
+                  reiciendis quam quidem fugit suscipit quas odio voluptatibus architecto tenetur expedita aliquid quos
+                  quisquam? Voluptatem, commodi reprehenderit deserunt quis repellat et aliquam sequi facere nemo
+                  suscipit maxime iure cupiditate molestiae tempora, totam, laudantium doloremque pariatur quam eius
+                  unde iste illo. Natus dignissimos ea vitae numquam maiores ipsum, tempora nesciunt beatae aliquid
+                  quaerat dolore eveniet cum aliquam atque ex debitis quod doloremque dolor accusamus ad eius!
+                  Repudiandae deleniti nobis dolorum laborum excepturi. Sunt iure, nemo labore ratione officia sit
+                  cumque, doloribus, ipsa error aliquam possimus repudiandae.
                 </p>
               </article>
             </a>
-          </li>
-          <li class="section-portfolio__item">
+          </div><!--/col-->
+          <div class="col-lg-3 col-md-6 col-sm-12">
             <a href="#" class="portfolio-link">
               <article class="portfolio-card">
                 <h3 class="potfolio-card__title">
@@ -428,12 +563,23 @@
                 </h3>
                 <img src="" alt="Project1 preview" class="portfolio-card__image">
                 <p class="portfolio-card__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ut. Porro laboriosam consectetur possimus mollitia atque sint veritatis incidunt? Eaque sint ipsam, nihil veritatis reprehenderit molestias, cum maxime a error veniam voluptates! Temporibus assumenda unde tempore itaque dolore obcaecati mollitia dolorum corporis tempora voluptatibus reprehenderit perspiciatis, officia dolores facilis qui. Minima a quo placeat at numquam quaerat odit enim nemo ea maxime maiores beatae, dolore reiciendis quam quidem fugit suscipit quas odio voluptatibus architecto tenetur expedita aliquid quos quisquam? Voluptatem, commodi reprehenderit deserunt quis repellat et aliquam sequi facere nemo suscipit maxime iure cupiditate molestiae tempora, totam, laudantium doloremque pariatur quam eius unde iste illo. Natus dignissimos ea vitae numquam maiores ipsum, tempora nesciunt beatae aliquid quaerat dolore eveniet cum aliquam atque ex debitis quod doloremque dolor accusamus ad eius! Repudiandae deleniti nobis dolorum laborum excepturi. Sunt iure, nemo labore ratione officia sit cumque, doloribus, ipsa error aliquam possimus repudiandae.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ut. Porro laboriosam consectetur
+                  possimus mollitia atque sint veritatis incidunt? Eaque sint ipsam, nihil veritatis reprehenderit
+                  molestias, cum maxime a error veniam voluptates! Temporibus assumenda unde tempore itaque dolore
+                  obcaecati mollitia dolorum corporis tempora voluptatibus reprehenderit perspiciatis, officia dolores
+                  facilis qui. Minima a quo placeat at numquam quaerat odit enim nemo ea maxime maiores beatae, dolore
+                  reiciendis quam quidem fugit suscipit quas odio voluptatibus architecto tenetur expedita aliquid quos
+                  quisquam? Voluptatem, commodi reprehenderit deserunt quis repellat et aliquam sequi facere nemo
+                  suscipit maxime iure cupiditate molestiae tempora, totam, laudantium doloremque pariatur quam eius
+                  unde iste illo. Natus dignissimos ea vitae numquam maiores ipsum, tempora nesciunt beatae aliquid
+                  quaerat dolore eveniet cum aliquam atque ex debitis quod doloremque dolor accusamus ad eius!
+                  Repudiandae deleniti nobis dolorum laborum excepturi. Sunt iure, nemo labore ratione officia sit
+                  cumque, doloribus, ipsa error aliquam possimus repudiandae.
                 </p>
               </article>
             </a>
-          </li>
-          <li class="section-portfolio__item">
+          </div><!--/col-->
+          <div class="col-lg-3 col-md-6 col-sm-12">
             <a href="#" class="portfolio-link">
               <article class="portfolio-card">
                 <h3 class="potfolio-card__title">
@@ -441,12 +587,24 @@
                 </h3>
                 <img src="" alt="Project1 preview" class="portfolio-card__image">
                 <p class="portfolio-card__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ut. Porro laboriosam consectetur possimus mollitia atque sint veritatis incidunt? Eaque sint ipsam, nihil veritatis reprehenderit molestias, cum maxime a error veniam voluptates! Temporibus assumenda unde tempore itaque dolore obcaecati mollitia dolorum corporis tempora voluptatibus reprehenderit perspiciatis, officia dolores facilis qui. Minima a quo placeat at numquam quaerat odit enim nemo ea maxime maiores beatae, dolore reiciendis quam quidem fugit suscipit quas odio voluptatibus architecto tenetur expedita aliquid quos quisquam? Voluptatem, commodi reprehenderit deserunt quis repellat et aliquam sequi facere nemo suscipit maxime iure cupiditate molestiae tempora, totam, laudantium doloremque pariatur quam eius unde iste illo. Natus dignissimos ea vitae numquam maiores ipsum, tempora nesciunt beatae aliquid quaerat dolore eveniet cum aliquam atque ex debitis quod doloremque dolor accusamus ad eius! Repudiandae deleniti nobis dolorum laborum excepturi. Sunt iure, nemo labore ratione officia sit cumque, doloribus, ipsa error aliquam possimus repudiandae.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ut. Porro laboriosam consectetur
+                  possimus mollitia atque sint veritatis incidunt? Eaque sint ipsam, nihil veritatis reprehenderit
+                  molestias, cum maxime a error veniam voluptates! Temporibus assumenda unde tempore itaque dolore
+                  obcaecati mollitia dolorum corporis tempora voluptatibus reprehenderit perspiciatis, officia dolores
+                  facilis qui. Minima a quo placeat at numquam quaerat odit enim nemo ea maxime maiores beatae, dolore
+                  reiciendis quam quidem fugit suscipit quas odio voluptatibus architecto tenetur expedita aliquid quos
+                  quisquam? Voluptatem, commodi reprehenderit deserunt quis repellat et aliquam sequi facere nemo
+                  suscipit maxime iure cupiditate molestiae tempora, totam, laudantium doloremque pariatur quam eius
+                  unde iste illo. Natus dignissimos ea vitae numquam maiores ipsum, tempora nesciunt beatae aliquid
+                  quaerat dolore eveniet cum aliquam atque ex debitis quod doloremque dolor accusamus ad eius!
+                  Repudiandae deleniti nobis dolorum laborum excepturi. Sunt iure, nemo labore ratione officia sit
+                  cumque, doloribus, ipsa error aliquam possimus repudiandae.
                 </p>
               </article>
             </a>
-          </li>
-        </ul>
+          </div><!--/col-->
+        </div><!--/row-->
+
       </div>
     </section>
     <section id="contacts" class="section section-offset section-contacts">
@@ -455,7 +613,10 @@
           Контакты
         </h2>
         <p class="section-descr sectioncon-contacts__descr">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, est minus! Eos ut libero, odio accusantium veniam molestias iusto quae ducimus dolorem nisi pariatur nostrum et voluptates voluptatum obcaecati sunt ipsa dicta dolor ullam autem quam corrupti laboriosam facilis. Voluptatem, soluta maiores. Nobis, tempora suscipit eveniet vitae deleniti assumenda molestias!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, est minus! Eos ut libero, odio accusantium veniam
+          molestias iusto quae ducimus dolorem nisi pariatur nostrum et voluptates voluptatum obcaecati sunt ipsa dicta
+          dolor ullam autem quam corrupti laboriosam facilis. Voluptatem, soluta maiores. Nobis, tempora suscipit
+          eveniet vitae deleniti assumenda molestias!
 
         </p>
         <div class="row">
@@ -502,7 +663,37 @@
             </ul>
           </div>
         </div><!--/row-->
-
+        <div class="row">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane"
+                type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false"
+                disabled>Disabled</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+              tabindex="0">Home</div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              A</div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+              B</div>
+            <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
+              tabindex="0">C</div>
+          </div>
+        </div>
       </div><!--/container-->
     </section>
   </main>
@@ -525,10 +716,15 @@
           <small class="footer__copy">
             &copy; Andrew Baev 2023, all right reserved.
           </small>
-        </div><!--?footer-right-->
+          <a href="tabs.html">Tabs</a>
+        </div><!--/footer-right-->
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
   <script src="js/main.js"></script>
 </body>
 
