@@ -181,9 +181,9 @@ align-items: center;
 
 .section-hero__title  {
   color: #f4070f;
-  font-weight: 100;
+  /*font-weight: 100;
   font-size: 64px;
-  line-height: 64px;
+  line-height: 64px;*/
 }
 
 .section-hero__descr  {
@@ -254,20 +254,20 @@ align-items: center;
 
 /*---skills-nav---*/
 
-.skills-nav {
-  margin-bottom: 30px;
-
+.section-skills__btn  {
+  color: #ff0000;
 }
 
-.skills-nav__item  {
-  border-right: 1px solid #787878;
-  border-bottom: 1px solid #787878;
+.section-skills__btn:hover  {
+  color: #333;
 }
 
-.tabs-nav__btn  {
-  padding: 2px ;
-  font-weight: 300;
-  font-size: 20px;
+.section-skills__btn:focus:not(:active) {
+  color: #333;
+}
+
+.section-skills__btn:active {
+  color: #787878;
 }
 
 
